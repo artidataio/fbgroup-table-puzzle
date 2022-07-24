@@ -1,0 +1,15 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.Table {
+  border-collapse: collapse;
+}
+.Cell {
+  border-width: 1px;
+  border-color: black;
+  text-align: center;
+}
