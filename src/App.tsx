@@ -25,23 +25,19 @@ export default function App() {
                     height: cellSize,
                     width: cellSize,
                     ...((indRow === 0 ||
-                      matrix[indRow][indCol] !==
-                        matrix[indRow - 1][indCol]) && {
+                      num !== matrix[indRow - 1][indCol]) && {
                       borderTopStyle: "solid"
                     }),
                     ...((indCol === 0 ||
-                      matrix[indRow][indCol] !==
-                        matrix[indRow][indCol - 1]) && {
+                      num !== matrix[indRow][indCol - 1]) && {
                       borderLeftStyle: "solid"
                     }),
                     ...((indRow === matrix.length - 1 ||
-                      matrix[indRow][indCol] !==
-                        matrix[indRow + 1][indCol]) && {
+                      num !== matrix[indRow + 1][indCol]) && {
                       borderBottomStyle: "solid"
                     }),
                     ...((indCol === matrix[0].length - 1 ||
-                      matrix[indRow][indCol] !==
-                        matrix[indRow][indCol + 1]) && {
+                      num !== matrix[indRow][indCol + 1]) && {
                       borderRightStyle: "solid"
                     })
                   }}
